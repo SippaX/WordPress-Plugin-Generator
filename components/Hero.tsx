@@ -4,26 +4,43 @@ import { WifiOff, Zap, Download } from 'lucide-react';
 
 export const Hero = () => {
   return (
-    <div className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
-      {/* Abstract Background Glows */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-purple-900/20 blur-[120px] rounded-full pointer-events-none" />
-      <div className="absolute top-20 right-0 w-[300px] h-[300px] bg-blue-900/10 blur-[100px] rounded-full pointer-events-none" />
+    <div className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-[#050505]">
+      {/* Modern Technical Background Grid */}
+      <div 
+        className="absolute inset-0 opacity-[0.15] pointer-events-none" 
+        style={{
+          backgroundImage: `
+            linear-gradient(to right, #4f46e5 1px, transparent 1px),
+            linear-gradient(to bottom, #4f46e5 1px, transparent 1px)
+          `,
+          backgroundSize: '40px 40px',
+          maskImage: 'radial-gradient(circle at center, black 0%, transparent 80%)',
+          WebkitMaskImage: 'radial-gradient(circle at center, black 0%, transparent 80%)'
+        }}
+      />
+
+      {/* Atmospheric Glows */}
+      <div className="absolute top-[-10%] left-1/2 -translate-x-1/2 w-[80%] h-[500px] bg-indigo-900/20 blur-[100px] rounded-full pointer-events-none mix-blend-screen" />
+      <div className="absolute top-[20%] right-[-10%] w-[400px] h-[400px] bg-purple-900/10 blur-[120px] rounded-full pointer-events-none" />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
         
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-purple-500/30 bg-purple-500/10 text-purple-300 text-xs font-bold tracking-wide uppercase mb-8 backdrop-blur-sm animate-fade-in-up">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-300 text-xs font-bold tracking-wide uppercase mb-8 backdrop-blur-sm animate-fade-in-up shadow-[0_0_20px_rgba(79,70,229,0.15)]">
           <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-purple-500"></span>
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
           </span>
           Lifetime Deal Active
         </div>
 
         {/* Headlines */}
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-neutral-500 mb-6">
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-neutral-500 mb-6 drop-shadow-2xl">
           Skip the Setup.<br />
-          <span className="text-white">Start Developing.</span>
+          <span className="text-white relative">
+            Start Developing.
+            <svg className="absolute w-full h-3 -bottom-1 left-0 text-indigo-500 opacity-50" viewBox="0 0 200 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.00025 6.99997C25.7607 3.65968 119.29 -1.97745 197.999 2.00002" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/></svg>
+          </span>
         </h1>
         
         <p className="max-w-2xl mx-auto text-lg md:text-xl text-neutral-400 mb-10 leading-relaxed">
@@ -38,6 +55,7 @@ export const Hero = () => {
             icon 
             href="https://sippa.gumroad.com/l/wp-plugin-generator"
             target="_blank"
+            data-gumroad-overlay-checkout="true"
           >
             Buy Once - $29.99
           </Button>
@@ -48,17 +66,17 @@ export const Hero = () => {
 
         {/* Feature Pills */}
         <div className="flex flex-wrap justify-center gap-4 md:gap-8 text-sm font-medium text-neutral-500">
-          <div className="flex items-center gap-2">
-            <WifiOff size={16} />
-            <span>100% Offline</span>
+          <div className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/5 bg-white/5 backdrop-blur-sm">
+            <WifiOff size={16} className="text-indigo-400" />
+            <span className="text-neutral-300">100% Offline</span>
           </div>
-          <div className="flex items-center gap-2">
-            <Zap size={16} />
-            <span>Instant Export</span>
+          <div className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/5 bg-white/5 backdrop-blur-sm">
+            <Zap size={16} className="text-indigo-400" />
+            <span className="text-neutral-300">Instant Export</span>
           </div>
-          <div className="flex items-center gap-2">
-            <Download size={16} />
-            <span>No Dependencies</span>
+          <div className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/5 bg-white/5 backdrop-blur-sm">
+            <Download size={16} className="text-indigo-400" />
+            <span className="text-neutral-300">No Dependencies</span>
           </div>
         </div>
       </div>

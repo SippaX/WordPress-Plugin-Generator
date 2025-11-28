@@ -30,12 +30,12 @@ export const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-          <div className="flex items-center gap-2 cursor-pointer group" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            {/* Stable Logo - No Rotation */}
-            <div className="bg-white text-black p-1 rounded-md shadow-[0_0_10px_rgba(255,255,255,0.2)]">
-              <Box size={16} strokeWidth={3} />
+          <div className="flex items-center gap-3 cursor-pointer group" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+            {/* Stable Logo - Slightly Larger */}
+            <div className="bg-white text-black p-1.5 rounded-lg shadow-[0_0_15px_rgba(255,255,255,0.3)]">
+              <Box size={20} strokeWidth={3} />
             </div>
-            <span className="text-base font-bold tracking-tight text-white transition-colors">WPGen.</span>
+            <span className="text-xl font-bold tracking-tight text-white transition-colors">WPGen.</span>
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
