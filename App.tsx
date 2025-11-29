@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
@@ -5,6 +6,7 @@ import { Features } from './components/Features';
 import { Comparison } from './components/Comparison';
 import { Pricing } from './components/Pricing';
 import { Footer } from './components/Footer';
+import { FAQ } from './components/FAQ';
 import { Download, Sliders, FolderOpen } from 'lucide-react';
 import { SectionHeading } from './components/ui/SectionHeading';
 
@@ -89,6 +91,7 @@ const App = () => {
 
         <Features />
         <Comparison />
+        <FAQ />
         <Pricing />
       </main>
 

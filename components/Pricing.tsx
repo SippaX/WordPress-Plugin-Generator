@@ -1,6 +1,7 @@
 import React from 'react';
 import { CheckCircle2 } from 'lucide-react';
 import { Button } from './ui/Button';
+import { SectionHeading } from './ui/SectionHeading';
 
 export const Pricing = () => {
   return (
@@ -10,11 +11,15 @@ export const Pricing = () => {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-indigo-500/5 via-transparent to-transparent pointer-events-none" />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-        <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">Simple, Transparent Pricing</h2>
-        <p className="text-neutral-400 text-lg mb-12">Pay once, generate forever. No recurring fees.</p>
+        
+        <SectionHeading 
+          badge="Pricing"
+          title="Simple, Transparent Pricing"
+          subtitle="Pay once, generate forever. No recurring fees."
+        />
 
         {/* Pricing Card Container */}
-        <div className="relative inline-block max-w-lg w-full group perspective-1000">
+        <div className="relative inline-block max-w-lg w-full group perspective-1000 mt-12">
             
             {/* The Gradient Border - Top Middle Start fading out to sides */}
             <div className="absolute inset-0 rounded-[32px] p-[1px] bg-gradient-to-b from-indigo-500 via-indigo-500/10 to-transparent opacity-60 group-hover:opacity-100 transition-opacity duration-500" style={{

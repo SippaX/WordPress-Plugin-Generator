@@ -47,7 +47,7 @@ export const Navbar = () => {
           >
             {/* Icon Container */}
             <div className={`
-              bg-white text-black rounded-[6px] flex items-center justify-center transition-all duration-300 shadow-[0_0_15px_rgba(255,255,255,0.15)]
+              bg-neutral-800 text-white rounded-[6px] flex items-center justify-center transition-all duration-300 shadow-[0_0_15px_rgba(255,255,255,0.05)]
               ${isScrolled ? 'w-8 h-8' : 'w-9 h-9'}
             `}>
               <Box size={isScrolled ? 18 : 20} strokeWidth={2.5} />
@@ -71,7 +71,8 @@ export const Navbar = () => {
             {[
               { id: 'how-it-works', label: 'How it Works' },
               { id: 'features', label: 'Features' },
-              { id: 'comparison', label: 'Comparison' }
+              { id: 'comparison', label: 'Comparison' },
+              { id: 'faq', label: 'FAQs' }
             ].map((item) => (
               <button 
                 key={item.id}
@@ -126,6 +127,7 @@ export const Navbar = () => {
              { id: 'how-it-works', label: 'How it Works' },
              { id: 'features', label: 'Features' },
              { id: 'comparison', label: 'Comparison' },
+             { id: 'faq', label: 'FAQs' },
              { id: 'pricing', label: 'Pricing' }
            ].map((item) => (
              <button 
