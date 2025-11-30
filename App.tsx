@@ -9,6 +9,7 @@ import { Footer } from './components/Footer';
 import { FAQ } from './components/FAQ';
 import { Download, Sliders, FolderOpen } from 'lucide-react';
 import { SectionHeading } from './components/ui/SectionHeading';
+import { SectionDivider } from './components/ui/SectionDivider';
 
 const App = () => {
   return (
@@ -18,8 +19,10 @@ const App = () => {
       <main>
         <Hero />
         
+        <SectionDivider />
+        
         {/* How It Works Section - Ultra Polished */}
-        <section id="how-it-works" className="py-32 border-t border-white/5 bg-[#080808] relative overflow-hidden">
+        <section id="how-it-works" className="py-32 bg-[#080808] relative overflow-hidden">
           {/* Background decoration */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[300px] bg-indigo-900/05 blur-[100px] rounded-full pointer-events-none" />
 
@@ -89,9 +92,16 @@ const App = () => {
           </div>
         </section>
 
+        <SectionDivider />
         <Features />
+        
+        <SectionDivider />
         <Comparison />
+        
+        <SectionDivider />
         <FAQ />
+        
+        <SectionDivider />
         <Pricing />
       </main>
 

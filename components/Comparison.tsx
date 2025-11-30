@@ -5,9 +5,7 @@ import { Check, X } from 'lucide-react';
 export const Comparison = () => {
   return (
     <section id="comparison" className="py-24 bg-[#050505] relative overflow-hidden">
-      {/* Background divider line */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
-
+      
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <SectionHeading 
             badge="Versus"
